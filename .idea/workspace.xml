@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b68b548f-bfb3-49c0-8405-0f2a8df8bc0c" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/src/question/NO9PalindromeNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/question/No1TwoSum.java" afterDir="false" />
+    <list default="true" id="b68b548f-bfb3-49c0-8405-0f2a8df8bc0c" name="Changes" comment="Commit NO.1 NO.9">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/question/fail/NO594.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/question/pass/NO628.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/question/toDo/NO13RomantoInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/question/toDo/NO389FindTheDifference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/question/toDo/NO455AssignCookies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/question/toImprove/NO20ValidParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/question/toImprove/NO496NextGreaterElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,34 +30,103 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/lang/Comparable.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NLwrSFSxzRZke6U9tS8pNY9Vbg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jack/develop/java/leetcodeExercise/src/book/algorithms4hedition&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="No1TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="question.No1TwoSum" />
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/book/algorithms4hedition" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NO28">
+    <configuration name="InsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="base.sort.InsertSort" />
       <module name="leetcodeExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="question.*" />
+          <option name="PATTERN" value="base.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NO28" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question.pass.NO28" />
+      <module name="leetcodeExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="question.pass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NO283" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question.pass.NO283" />
+      <module name="leetcodeExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="question.pass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NO83" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question.pass.NO83" />
+      <module name="leetcodeExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="question.pass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <module name="leetcodeExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -61,7 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.No1TwoSum" />
+        <item itemvalue="Application.NO28" />
+        <item itemvalue="Application.NO283" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.NO83" />
+        <item itemvalue="Application.InsertSort" />
       </list>
     </recent_temporary>
   </component>
@@ -73,7 +152,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679456869359</updated>
-      <workItem from="1679456870466" duration="4945000" />
+      <workItem from="1679456870466" duration="15729000" />
+      <workItem from="1679534607984" duration="17890000" />
+      <workItem from="1679619793778" duration="10554000" />
+      <workItem from="1679902808889" duration="8277000" />
+      <workItem from="1679965657851" duration="19315000" />
+      <workItem from="1680054694845" duration="18010000" />
+      <workItem from="1680139532181" duration="16236000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1679457391831</created>
@@ -82,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679457391831</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit NO.1 NO.9">
+      <created>1679464865339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679464865339</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +218,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Commit NO.1 NO.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit NO.1 NO.9" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
