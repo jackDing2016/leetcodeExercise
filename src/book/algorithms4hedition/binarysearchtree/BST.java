@@ -33,7 +33,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         return get(root, key);
     }
 
-    ;
+
 
     private Value get(Node x, Key key) {
         if (x == null) return null;
@@ -82,5 +82,13 @@ public class BST<Key extends Comparable<Key>, Value> {
         else if (t < k) return select(x.right, k - t - 1);
         else return x;
     }
+
+    public Key floor(Key key) {
+//        Node x = float(root, key);
+        return null;
+    }
+
+//    private Node floor
+
 
 }

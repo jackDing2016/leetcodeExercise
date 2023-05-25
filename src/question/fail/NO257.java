@@ -5,9 +5,10 @@ import java.util.List;
 
 import question.common.TreeNode;
 
-/*
+/**
  * <a href=https://leetcode.com/problems/binary-tree-paths/>Go to Quest</a>
  */
+
 public class NO257 {
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> res = new ArrayList<>();

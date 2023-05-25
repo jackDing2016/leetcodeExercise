@@ -2,7 +2,7 @@ package base.sort;
 
 
 /**
- * <a href=https://en.wikipedia.org/wiki/Bubble_sort>Reference</a>
+ * <a href=https://en.wikipedia.org/wiki/Selection_sort>Reference</a>
  */
 public class SelectionSort extends Sort {
 
