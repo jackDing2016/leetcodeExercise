@@ -26,6 +26,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
 
     public void insert(Key k) {
         pq[++N] = k;
+        swim(N);
     }
 
     public Key max() {
@@ -79,13 +80,27 @@ public class MaxPQ<Key extends Comparable<Key>> {
     }
 
     public static void main(String[] args) {
-        Integer[] a = new Integer[]{null, 15, 12, 57, 123, 66, 11, 98};
-        MaxPQ<Integer> maxPQ = new MaxPQ<>(a);
+//        Integer[] a = new Integer[]{null, 15, 12, 57, 123, 66, 11, 98};
+//        MaxPQ<Integer> maxPQ = new MaxPQ<>(a);
+//        maxPQ.displayPQ();
+//
+////        maxPQ.swim(7);
+//        maxPQ.sink(1);
+//        maxPQ.displayPQ();
+
+
+        MaxPQ<Integer> maxPQ = new MaxPQ<>(10);
         maxPQ.displayPQ();
 
-//        maxPQ.swim(7);
-        maxPQ.sink(1);
-        maxPQ.displayPQ();
+        maxPQ.insert(15); maxPQ.displayPQ();
+        maxPQ.insert(12); maxPQ.displayPQ();
+        maxPQ.insert(57); maxPQ.displayPQ();
+        maxPQ.insert(123); maxPQ.displayPQ();
+        maxPQ.insert(66); maxPQ.displayPQ();
+        maxPQ.insert(11); maxPQ.displayPQ();
+        maxPQ.insert(98); maxPQ.displayPQ();
+
+
     }
 
 }

@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b68b548f-bfb3-49c0-8405-0f2a8df8bc0c" name="Changes" comment="Code commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/sort/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/sort/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/book/algorithms4hedition/MaxPQ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/book/algorithms4hedition/binarysearchtree/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/book/algorithms4hedition/binarysearchtree/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/question/fail/NO257.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/question/fail/NO257.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/sort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/book/algorithms4hedition/queue/priorityqueue/MaxPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/book/algorithms4hedition/queue/priorityqueue/MaxPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/question/doing/NO100.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/question/doing/NO100.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/question/doing/NO62.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/question/doing/NO62.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/question/doing/NO67.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/question/doing/NO67.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -31,6 +31,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/lang/Comparable.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/lang/String.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/util/AbstractSet.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/util/ConcurrentModificationException.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/util/HashMap.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/util/HashSet.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/util/List.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/util/Set.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/util/Stack.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$USER_HOME$/.jdks/corretto-18.0.2/lib/src.zip!/java.base/java/util/Vector.java" root0="SKIP_INSPECTION" />
   </component>
@@ -52,13 +58,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jack/develop/java/leetcodeExercise/src/question/toImprove&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jack/develop/java/goldendict-data-collector/pom.xml&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -74,83 +80,54 @@
       <recent name="$PROJECT_DIR$/src/book/algorithms4hedition/queue/priorityqueue" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="question.doing" />
       <recent name="question.pass" />
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaxPQ">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="base.designpattern.basecode.movie.Client" />
+  <component name="RunManager" selected="Application.Exe313">
+    <configuration name="Exe313" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bookExercise.algorithmFourth.chapterThree.section1.Exe313" />
       <module name="leetcodeExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="base.designpattern.basecode.movie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxPQ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="book.algorithms4hedition.queue.priorityqueue.MaxPQ" />
+    <configuration name="GetPrime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mathematical.tool.GetPrime" />
       <module name="leetcodeExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="book.algorithms4hedition.queue.priorityqueue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NO279" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="question.doing.NO279" />
+    <configuration name="NO62" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question.doing.NO62" />
       <module name="leetcodeExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="question.pass.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NO58" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="question.pass.NO58" />
+    <configuration name="NO67" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question.doing.NO67" />
       <module name="leetcodeExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="question.pass.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="book.javareflectioninaction.test.Test" />
+      <option name="MAIN_CLASS_NAME" value="mathematical.tool.Test" />
       <module name="leetcodeExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="book.javareflectioninaction.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MaxPQ" />
+        <item itemvalue="Application.Exe313" />
+        <item itemvalue="Application.GetPrime" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.NO279" />
-        <item itemvalue="Application.NO58" />
+        <item itemvalue="Application.NO67" />
+        <item itemvalue="Application.NO62" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +167,26 @@
       <workItem from="1684835284196" duration="1740000" />
       <workItem from="1684893687151" duration="1798000" />
       <workItem from="1684916429754" duration="9556000" />
-      <workItem from="1684978129334" duration="3601000" />
+      <workItem from="1684978129334" duration="17270000" />
+      <workItem from="1685071571274" duration="5437000" />
+      <workItem from="1685428295250" duration="3671000" />
+      <workItem from="1685496469292" duration="2865000" />
+      <workItem from="1685521004239" duration="603000" />
+      <workItem from="1685579378592" duration="599000" />
+      <workItem from="1685667920062" duration="72000" />
+      <workItem from="1686027229566" duration="1270000" />
+      <workItem from="1687232296261" duration="3078000" />
+      <workItem from="1687339192016" duration="870000" />
+      <workItem from="1687742920811" duration="9880000" />
+      <workItem from="1687831133003" duration="4053000" />
+      <workItem from="1688952351214" duration="71000" />
+      <workItem from="1688952433957" duration="3022000" />
+      <workItem from="1692328438188" duration="1142000" />
+      <workItem from="1693558683876" duration="4385000" />
+      <workItem from="1696670030233" duration="612000" />
+      <workItem from="1696993288740" duration="2508000" />
+      <workItem from="1697095486705" duration="2075000" />
+      <workItem from="1697164409773" duration="10637000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1679457391831</created>
@@ -213,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680168344812</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Code commit">
+      <created>1684981948412</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684981948412</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
