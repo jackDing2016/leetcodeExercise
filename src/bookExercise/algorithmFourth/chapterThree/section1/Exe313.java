@@ -7,7 +7,7 @@ public class Exe313 {
 
     public static void main(String[] args) {
         SymbolTable st = new OrderedSequentialSearchST();
-        st.put("age", "35");
+        st.put("age", "120");
 
         st.put("weight", "65kg");
         st.put("career", "Computer Science");
@@ -46,19 +46,23 @@ public class Exe313 {
 
         @Override
         public void put(String key, String value) {
+
+            // if node is empty
             if (list.next == null) {
                 list.next = new Node(key, value);
-            } else {
+            }
+            // if node is not empty
+            else {
                 Node node = list.next;
 
-                // is first
+                // if should be put the node at first position
                 if (compare(key, node.key)) {
                     Node nodeToPut = new Node(key, value);
                     nodeToPut.next = list.next;
                     list.next = nodeToPut;
                 }
 
-                // is not first
+                // if should be put the node at non-first position
                 while (true) {
 
                     if (node.next == null) {
