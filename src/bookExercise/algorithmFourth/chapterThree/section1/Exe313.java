@@ -7,20 +7,25 @@ public class Exe313 {
 
     public static void main(String[] args) {
         SymbolTable st = new OrderedSequentialSearchST();
-        st.put("name", "Jack");
         st.put("age", "35");
-        st.put("career", "Computer Science");
-        st.put("hobby", "Snooker");
+
         st.put("weight", "65kg");
+        st.put("career", "Computer Science");
 
-        st.delete("age");
+        st.put("name", "Jack");
+        st.put("hobby", "Snooker");
+//        st.put("bbb", "bbb");
 
-        st.printST();
+
+//        st.delete("age");
+
+
+//        st.printST();
     }
 
     public static class OrderedSequentialSearchST implements SymbolTable {
 
-        private Node list;
+        private Node list = null;
 
         private int size;
 
@@ -28,33 +33,48 @@ public class Exe313 {
             list = new Node();
         }
 
+
+        // compare key select the first one of the string to compare by the natural alphabet
+        private boolean compare(String keyOne, String keyTwo) {
+//            System.out.println(keyOne.charAt(0));
+//            System.out.println(keyTwo.charAt(0));
+//            System.out.println(keyOne.charAt(0) < keyTwo.charAt(0));
+//            System.out.println("---------------------------------");
+            return keyOne.charAt(0) < keyTwo.charAt(0);
+
+        }
+
         @Override
         public void put(String key, String value) {
-
-            Node node = list.next;
-            // if list is empty
-            if (node == null) {
+            if (list.next == null) {
                 list.next = new Node(key, value);
-                size++;
-            }
-            // else if list is not empty
-            else {
+            } else {
+                Node node = list.next;
+
+                // is first
+                if (compare(key, node.key)) {
+                    Node nodeToPut = new Node(key, value);
+                    nodeToPut.next = list.next;
+                    list.next = nodeToPut;
+                }
+
+                // is not first
                 while (true) {
-                    // if list contains key
-                    if (key.equals(node.key)) {
-                        node.value = value;
-                        break;
-                    }
-                    //  node.next = null which indicate that arrive tail of list
+
                     if (node.next == null) {
                         node.next = new Node(key, value);
-                        size++;
+                        break;
+                    } else if (!compare(key, node.key) && compare(key, node.next.key)) {
+                        Node nodeToPut = new Node(key, value);
+                        nodeToPut.next = node.next;
+                        node.next = nodeToPut;
                         break;
                     }
                     node = node.next;
                 }
             }
-
+            System.out.println("-------------------");
+            printST();
         }
 
         @Override
