@@ -16,4 +16,6 @@ public interface SymbolTableGeneric<KEY, VALUE> {
 
     void printST();
 
+    int rank(KEY key);
+
 }

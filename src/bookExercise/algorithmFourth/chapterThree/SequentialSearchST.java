@@ -3,6 +3,10 @@ package bookExercise.algorithmFourth.chapterThree;
 import bookExercise.algorithmFourth.common.SymbolTableGeneric;
 
 public class SequentialSearchST<KEY extends Comparable<KEY>, VALUE> implements SymbolTableGeneric<KEY, VALUE> {
+    @Override
+    public int rank(KEY key) {
+        return 0;
+    }
 
     public static void main(String[] args) {
         SymbolTableGeneric<String, String> st = new SequentialSearchST<>();
@@ -85,7 +89,7 @@ public class SequentialSearchST<KEY extends Comparable<KEY>, VALUE> implements S
 
     @Override
     public boolean contains(KEY key) {
-        return false;
+        return rank(key) > 0;
     }
 
     @Override

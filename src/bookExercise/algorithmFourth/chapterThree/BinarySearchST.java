@@ -5,6 +5,17 @@ import bookExercise.algorithmFourth.common.SymbolTableGeneric;
 
 
 public class BinarySearchST<Key extends Comparable<Key>, Value> implements SymbolTableGeneric<Key, Value> {
+    @Override
+    public int rank(Key key) {
+
+        if (key == null) return -1;
+
+        if (isEmpty()) return -1;
+
+
+        return binarySearchHelper(0, size - 1, key) + 1;
+    }
+
     public static void main(String[] args) {
         SymbolTableGeneric<Integer, String> st = new BinarySearchST<>();
         st.put(6, "peter");
@@ -13,6 +24,14 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Symbo
         st.put(8, "jerry");
         st.put(7, "gordon");
         st.put(1, "alex");
+        st.printST();
+        System.out.println(st.get(3));
+//        System.out.println(st.rank(3));
+//        System.out.println(st.rank(6));
+//        System.out.println(st.rank(1));
+//        st.delete(8);
+//        st.delete(1);
+        st.delete(3);
         st.printST();
     }
 
@@ -31,7 +50,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Symbo
         values = (Value[]) new Object[10];
     }
 
-    private int rank(Key key) {
+    private int rankForPut(Key key) {
 
 //        for (int i = 0; i < size; i++) {
 //            if (key.compareTo(keys[i]) < 0) {
@@ -40,10 +59,10 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Symbo
 //
 //        }
         if (size == 0) return 1;
-        return binarySearchHelper(0, size - 1, key) + 1;
+        return binarySearchHelperForPut(0, size - 1, key) + 1;
     }
 
-    public int binarySearchHelper(int low, int high, Key key) {
+    public int binarySearchHelperForPut(int low, int high, Key key) {
 
         // base case
         if (low >= high) {
@@ -53,11 +72,25 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Symbo
                 return low + 1;
             }
         }
-
-
         int mid = (low + high) / 2;
+        if (key.compareTo(keys[mid]) < 0) {
+            return binarySearchHelperForPut(low, mid, key);
+        } else if (key.compareTo(keys[mid]) == 0) {
+            return mid;
+        } else {
+            return binarySearchHelperForPut(mid + 1, high, key);
+        }
+
+    }
 
 
+    public int binarySearchHelper(int low, int high, Key key) {
+
+        // base case
+        if (low > high) {
+            return -2;
+        }
+        int mid = (low + high) / 2;
         if (key.compareTo(keys[mid]) < 0) {
             return binarySearchHelper(low, mid, key);
         } else if (key.compareTo(keys[mid]) == 0) {
@@ -68,12 +101,11 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Symbo
 
     }
 
-
     @Override
     public void put(Key key, Value value) {
 
-        // get rank of key
-        int rank = rank(key);
+        // get rankForPut of key
+        int rank = rankForPut(key);
 
         // set key of value
 
@@ -91,12 +123,23 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Symbo
 
     @Override
     public Value get(Key key) {
-        return null;
+        return values[binarySearchHelper(0, size - 1, key)];
     }
 
     @Override
     public void delete(Key key) {
+        if (isEmpty()) return;
+        int rank = rank(key);
 
+        if (rank < 0) return;// not contains
+        else {
+            int index = rank - 1;
+            for (int i = index; i < size; i++) {
+                keys[i] = keys[i + 1];
+                values[i] = values[i + 1];
+            }
+            size--;
+        }
     }
 
     @Override
@@ -106,7 +149,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Symbo
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size == 0;
     }
 
     @Override
