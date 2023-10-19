@@ -4,7 +4,7 @@ public interface SymbolTableGeneric<KEY, VALUE> {
 
     void put(KEY key, VALUE value);
 
-    String get(KEY key);
+    VALUE get(KEY key);
 
     void delete(KEY key);
 

@@ -1,4 +1,4 @@
-package bookExercise.algorithmFourth.chapterThree.section2;
+package bookExercise.algorithmFourth.chapterThree;
 
 
 /******************************************************************************

@@ -1,7 +1,6 @@
-package bookExercise.algorithmFourth.chapterThree.section2;
+package bookExercise.algorithmFourth.chapterThree;
 
 
-import bookExercise.algorithmFourth.common.SymbolTable;
 import bookExercise.algorithmFourth.common.SymbolTableGeneric;
 
 
@@ -91,7 +90,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> implements Symbo
     }
 
     @Override
-    public String get(Key key) {
+    public Value get(Key key) {
         return null;
     }
 
